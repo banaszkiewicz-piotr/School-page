@@ -9,15 +9,15 @@
     <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
         <nav class="navbar navbar-expand-sm bg-warning">
             <div class="container-fluid">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav d-inline-flex ">
                     <li class="nav-item me-3">
-                        <a href="index.html"><img src="Logo ZST2.png" alt="Logo"></a>
+                        <a href="index.html"><img class="img-fluid" src="Logo ZST6.png" alt="Logo"></a>
                     </li>
                     <li class="nav-item me-3">
                         <div class="dropdown">
-                            <a href="#" class="link-dark" data-bs-toggle="dropdown">Szkoła</a>
+                            <button class="btn btn-outline link-dark" data-bs-toggle="dropdown">Szkoła</button>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item">Grono pedagogiczne</a></li>
+                                <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#outsource">Grono pedagogiczne</a></li>
                                 <li><a class="dropdown-item">Kierunki kształcenia</a></li>
                                 <li><a class="dropdown-item">Statut</a></li>
                             </ul>
@@ -25,7 +25,7 @@
                     </li>
                     <li class="nav-item me-3">
                         <div class="dropdown">
-                            <a href="#" class="link-dark" data-bs-toggle="dropdown">Uczeń</a>
+                            <button class="btn btn-outline link-dark" data-bs-toggle="dropdown">Uczeń</button>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item">Dziennik Librus</a></li>
                                 <li><a class="dropdown-item">Plan lekcji</a></li>
@@ -34,7 +34,7 @@
                     </li>
                     <li class="nav-item me-3">
                         <div class="dropdown">
-                            <a href="#" class="link-dark" data-bs-toggle="dropdown">Kontakt</a><!--Nie działa :(-->
+                            <button class="btn btn-outline link-dark" data-bs-toggle="dropdown">Kontakt</button><!--Nie działa :(-->
                             <div id="dropContact">
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item">Adres</a></li>
@@ -47,12 +47,12 @@
                 </ul>
             </div>
         </nav>
-        <div class="container-fluid ps-0 pe-0">
+        <div class="container-fluid ps-0 pe-0 mt-0">
             <img class="headerBackground" src="ZST2.jpg" alt="zst">
-            <div class="container fluid d-flex flex-row" style="position: absolute;">
-                <div class="align-center">
-                    <h1>Zespół Szkół Technicznych</h1>
-                    <h4>im. Tadeusza Kościuszki w Radomiu</h4>
+            <div class="container fluid d-flex justify-content-center">
+                <div class="header">
+                    <p class="h1">Zespół Szkół Technicznych</p>
+                    <p class="h4">im. Tadeusza Kościuszki w Radomiu</p>
                 </div>
             </div>
         </div>
@@ -124,4 +124,21 @@
             </div>
         </div>
     </body>
+    <!--Modale-->
+    <div class="modal" id="outsource">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Uwaga</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Zostaniesz przekierowany na zewnętrzną stronę.</p>
+                    <p id="urlAddress"></p>
+                </div>
+                <div class="modal-footer">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
 </html>
