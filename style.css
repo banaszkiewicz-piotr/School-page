@@ -1,8 +1,8 @@
 .headerBackground {
     width: 100%;
-    min-height: 150px;
+    min-height: 180px;
     height: 25%;
-    margin-bottom: -149px;
+    margin-bottom: -130px;
     filter: brightness(25%);
 }
 
