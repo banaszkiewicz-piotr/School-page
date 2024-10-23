@@ -17,7 +17,8 @@
                         <div class="dropdown dropend">
                             <button class="btn btn-outline link-dark" data-bs-toggle="dropdown">Szkoła</button>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="https://www.zst-radom.edu.pl/index.php/kadra/" target="_parent">Grono pedagogiczne</a></li>
+                                <!--<li><a class="dropdown-item" href="https://www.zst-radom.edu.pl/index.php/kadra/" target="_parent">Grono pedagogiczne</a></li>-->
+                                <li><a class="dropdown-item" data-bs-toggle="offcanvas" data-bs-target="#principal">Dyrekcja</a>
                                 <li><a class="dropdown-item" href="#education">Kierunki kształcenia</a></li>
                                 <li><a class="dropdown-item" href="https://www.zst-radom.edu.pl/wp-content/uploads/2024/09/STATUT-ZST.pdf" target="_parent">Statut</a></li>
                             </ul>
@@ -136,8 +137,8 @@
                 </div>
                 <div class="modal-body">
                     <h4>Sekretariat:</h4>
-                    <p>48 362-81-85</p>
-                    <p>Czynny Pn.-Pt. 8.00-15.30</p>
+                    <p>Telefon: 48 362-81-85</p>
+                    <p>Czynny: pn.-pt. 8.00-15.30</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Zamknij</button>
@@ -154,7 +155,7 @@
                 <div class="modal-body">
                     <h4>Radom ul. Bolesława Limanowskiego 26/31</h4>
                     <p>Kod pocztowy: RADOM 26-600</p>
-                    <a href="https://maps.app.goo.gl/kPiSU8NkX89MV3MFA" class="link-warning">Pokaż na mapie</a>
+                    <a href="https://maps.app.goo.gl/aFk8do5fv6E2YXkr5" class="link-warning">Pokaż na mapie</a>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Zamknij</button>
@@ -176,6 +177,41 @@
                     <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Zamknij</button>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="offcanvas offcanvas-start" id="principal">
+        <div class="offcanvas-header">
+            <h1 class="offcanvas-title">Dyrekcja</h1>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <table class="table table-hover">
+                <tr>
+                    <td>Dyrektor</td>
+                    <td>Anna</td>
+                    <td>Kwiatkowska</td>
+                </tr>
+                <tr>
+                    <td>Wicedyrektor</td>
+                    <td>Joanna</td>
+                    <td>Krakowiak</td>
+                </tr>
+                <tr>
+                    <td>Wicedyrektor</td>
+                    <td>Monika</td>
+                    <td>Mazur</td>
+                </tr>
+                <tr>
+                    <td>Wicedyrektor</td>
+                    <td>Agnieszka</td>
+                    <td>Różycka</td>
+                </tr>
+                <tr>
+                    <td>Wicedyrektor</td>
+                    <td>Artur</td>
+                    <td>Rudnicki</td>
+                </tr>
+            </table>
         </div>
     </div>
 </html>
